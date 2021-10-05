@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WebConf</title>
+
+        <link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="caixa_texto.css">
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<link rel="stylesheet" type="text/css" href="icones/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+	<body>
+
+		<div id="cabecalho">
+			<h1>WebConf</h1>
+		</div>
+
+		<div id="conteudo_principal">
+			<div id="tela">
+				
+				<div id="videos">
+					<video id="localVideo" autoplay muted playsinline></video>
+					<video id="remoteVideo" autoplay playsinline></video>
+				</div>
+				
+				<!--
+				<div class="monitor">
+					<img style="margin-right: 45px ;" src="imagens\webcam.png">
+					<img src="imagens\webcam.png">
+				</div>
+				-->
+				<div class="configuracoes">
+					<span class="fi fi-rr-volume"></span>
+					<span class="fi fi-rr-compress"></span>
+					<span class="fi fi-rr-expand"></span>
+					<span class="fi fi-rr-eye-crossed"></span>
+					<span class="fi fi-rr-eye"></span>
+					<div class="icone_saida">
+						<span class="fi fi-rr-user-remove"></span>
+					</div>
+					
+				</div>
+			</div>
+
+    
+			<!-- Div onde fica o painel de mensagens e lista de usuários-->
+			<div id='sala_chat'>
+				
+			</div>
+		</div>
+    
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
